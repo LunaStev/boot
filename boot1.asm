@@ -21,23 +21,7 @@ paint:
     jnz paint
 
     mov edi, 0
-    mov byte [es:edi], 'H'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], 'o'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], 'l'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], 'a'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], ','
+    mov byte [es:edi], 'I'
     inc edi
     mov byte [es:edi], 0x06
     inc edi
@@ -45,7 +29,15 @@ paint:
     inc edi
     mov byte [es:edi], 0x06
     inc edi
-    mov byte [es:edi], 'T'
+    mov byte [es:edi], 'M'
+    inc edi
+    mov byte [es:edi], 0x06
+    inc edi
+    mov byte [es:edi], 'a'
+    inc edi
+    mov byte [es:edi], 0x06
+    inc edi
+    mov byte [es:edi], 'd'
     inc edi
     mov byte [es:edi], 0x06
     inc edi
@@ -57,27 +49,11 @@ paint:
     inc edi
     mov byte [es:edi], 0x06
     inc edi
-    mov byte [es:edi], 'a'
+    mov byte [es:edi], 'T'
     inc edi
     mov byte [es:edi], 0x06
     inc edi
-    mov byte [es:edi], 'm'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], 'o'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], ' '
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], 'D'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
-    mov byte [es:edi], 'a'
+    mov byte [es:edi], 'h'
     inc edi
     mov byte [es:edi], 0x06
     inc edi
@@ -89,10 +65,8 @@ paint:
     inc edi
     mov byte [es:edi], 0x06
     inc edi
-    mov byte [es:edi], 'y'
-    inc edi
-    mov byte [es:edi], 0x06
-    inc edi
+
+
     jmp $
 
     msgBack db '.', 0x67
